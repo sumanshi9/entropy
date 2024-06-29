@@ -1,0 +1,288 @@
+/* src/components/NavBar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face{
+    font-family: 'zuumeroughregular';
+    src: url('../Fonts/Fontspring-DEMO-zuumerough-regular.otf') format('truetype');
+}
+
+
+nav{
+    height: 15vh;
+    /* position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; */
+}
+
+.topnav{
+    background-image: linear-gradient(180deg, #EF5394, #F26F66);
+    margin:0;
+    height: 4vh;
+
+}
+
+.topnav h5{
+    margin: 0;
+    font-family: "zuumeroughregular", sans-serif;
+}
+
+.topnav .contact {
+    display:flex;
+    
+}
+
+
+.phoneIcon{
+    margin-top: 2px;
+}
+.main {
+    /* background-color: #000000; */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 0;
+    padding-top: 0;
+    
+  }
+
+
+  
+  .nav-logo{
+    padding: 2% 5%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+  }
+
+  .nav-logo img {
+    height: 60px; /* Adjust the size as needed */
+
+  }
+  .nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    padding: 0;
+    margin-right: 10%;
+  }
+  
+  .nav-item {
+    margin: 0 1.5rem; /* Add some spacing between the items */
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 10px;
+  }
+  
+  .nav-item a {
+    /* color: white; */
+    text-decoration: none;
+    font-size: 1.2rem;
+    
+   
+
+  }
+  
+  .nav-item a:hover {
+    text-decoration: underline;
+  
+  }
+  
+  .NavHeading{
+
+
+    
+
+    
+  /* background-image: linear-gradient(180deg, #EF5394, #F26F66);  
+  background-size: 100%;
+  background-repeat: repeat;
+
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent; */
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color:rgb(210, 210, 210);  
+
+  }
+
+  .NavHeading:hover{
+    text-decoration: none;
+    
+    
+  }
+
+  link{
+    text-decoration: none;
+  }
+
+
+  .menu-nav{
+    background-image: linear-gradient(180deg, #EF5394, #F26F66);
+    padding: 8px 15px;
+    height: 6vh;
+    width:17%;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+
+    border-top-left-radius: 20px; 
+    border-bottom-left-radius: 20px; 
+    border-top-right-radius: 0; 
+    border-bottom-right-radius: 0;
+
+  }
+
+  .foodmenunav{
+
+    background-color:white;
+    border-radius: 30px;
+    height: 5vh;
+    padding:0 4px;
+    width: 80%;
+    margin:0;    
+    border: none;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+  }
+
+  .menu-nav a{
+    text-decoration: none;
+    color:rgb(180, 179, 179);
+    /* background-color: aquamarine; */
+    cursor: grab;
+    display: inline-block;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    
+  }
+
+
+  .menu-icon{
+    width: 40px;
+    height:16px;
+    /* margin-right: 5px; */
+    display: inline-block;
+    animation: tiltWithPause 1s ease-in-out infinite;
+
+  }
+  
+@keyframes tiltWithPause {
+    0% {
+      transform: rotate(0);
+    }
+    10% {
+      transform: rotate(-8deg);
+    }
+    20% {
+      transform: rotate(8deg);
+    }
+    30%, 100% {
+      transform: rotate(0);
+    }
+  }
+
+  .explore-menu{
+    margin:0;
+    padding:0;
+  }
+  .right-arrow{
+    
+    height:13px;
+    width: 40px;
+    animation: moveRight 0.3s linear infinite;
+  }
+
+  @keyframes moveRight {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(2px); /* Adjust the distance as needed */
+    }
+    100% {
+        transform: translateX(0); /* Adjust the distance as needed */
+      }
+
+  }
+
+  .nav-menu-icon{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    /* background-color: black; */
+    justify-content: center;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+
+
+  .nav-menu-icon .bar1, .nav-menu-icon  .bar2, .nav-menu-icon  .bar3{
+
+    
+    
+    border: 1.5px solid white;
+    margin: 2px;
+
+  }
+  
+  .nav-menu-icon  .bar1{
+  width: 12px;
+  }
+  
+  .nav-menu-icon  .bar2{
+  width: 15px;
+  }
+  
+  .nav-menu-icon  .bar3{
+  width: 11px;
+  }
+
+
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }

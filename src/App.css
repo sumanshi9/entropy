@@ -1,5 +1,13 @@
 .App {
   text-align: center;
+  background-image: url('./Images/bg2.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  height: 120vh; 
+  background-color: black;
+  overflow: hidden;
+  
 }
 
 .App-logo {
