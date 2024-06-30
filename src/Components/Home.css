@@ -10,7 +10,7 @@
 }
 
 
-.homepagemain{
+.home-container-1{
     display: flex;
     padding: 0 10px;
     height: 100vh;
@@ -192,8 +192,191 @@
 
 
 
-.homeCont-2{
-    background-color: #EF5394;
-    height: 90vh;
+.home-container-2{
+    /* background-color: #EF5394; */
+    width: 95%;
+    display: flex;
+    padding: 10% 5%;
+    /* margin-right: 10%; */
+    overflow: hidden;
+    
+}
 
+.home-cont-2-sub-1{
+    /* background-color: #EF5394; */
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: white;
+    text-align: left;
+    padding: 2% 0% 0 5%;
+
+}
+
+.home-cont-2-sub-1 h4{
+    text-align: left;
+    font-size: 27px;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;;
+    font-family: zuumerough, sans-serif;
+}
+
+.home-cont-2-sub-1 h1{
+    
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+    font-family: zuumerough, sans-serif;
+}
+
+.home-cont-2-sub-1 p{
+    text-align: left;
+    color: rgb(197, 197, 197);
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-family: zuumeroughregular, sans-serif;
+    padding-right: 40px;
+    /* background-color: #F26F66; */
+}
+
+
+
+.home-cont-2-sub-2{
+    width: 70%;
+    height: 70vh;
+    /* background-color: rgb(200, 199, 199); */
+    padding-right: 1%;
+    display: flex;
+    
+
+}
+
+.img-container-1, .img-container-2, .img-container-3, .img-container-4{
+    /* background-color: #ef539448; */
+    height: 90%;
+    margin: 10px;
+
+}
+
+.img-container-1{
+    width: 20%;
+}
+
+.img-container-2{
+    width: 20%;
+}
+
+.img-container-3{
+    width: 20%;
+}
+
+.img-container-4{
+    width: 40%;
+}
+
+
+.img-container-2-sub-1, .img-container-2-sub-2, .img-container-3-sub-1, .img-container-3-sub-2{ 
+    /* margin: 5px; */
+    /* background-color: #bfff00; */
+    height: 49%;
+}
+
+.img-container-1 .img-one{
+    width: 200px; 
+    height: 100%; 
+    /* object-fit: cover; */
+    border-radius: 5px;
+    
+}
+
+.img-container-2 .img-container-2-sub-1 .img-two{
+
+    width: 200px; 
+    height: 100%; 
+    margin: 0 5px 5px 5px;
+    border-radius: 5px;
+}
+
+.img-container-2 .img-container-2-sub-2 .img-three{
+    width: 200px; 
+    height: 100%; 
+    margin: 20px 5px 0px 5px;
+    border-radius: 5px;
+
+}
+
+.img-container-3 .img-container-3-sub-1 .img-four{
+
+    width: 200px; 
+    height: 100%; 
+    margin: 0 5px 5px 5px;
+    display: block;
+    border-radius: 5px;
+
+}
+
+
+
+.img-container-3{
+    display: inline-block;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.673); /* Black overlay with 0.5 opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.overlay img {
+    width: 50px; /* Fixed size for Instagram icon */
+    height: 50px; /* Fixed size for Instagram icon */
+    opacity: 1; /* Ensure icon is fully visible on the overlay */
+    transition: opacity 0.3s ease;  /* Smooth transition for icon */
+    
+}
+.overlay a {
+    position: relative;
+    text-decoration: none;
+}
+.overlay .title {
+    color: #fff; /* White text color */
+    font-size: 14px; /* Adjust font size as needed */
+    margin-top: 8px; /* Space between icon and title */
+    position: relative; /* Ensure title respects z-index */
+    z-index: 1;/* Space between icon and title */
+    text-decoration: none;
+}
+
+.overlay img:hover {
+    opacity: 0.8; /* Lower opacity on hover to indicate interaction */
+}
+
+.img-container-3 .img-container-3-sub-2 .img-five{
+    width: 200px; 
+    height: 100%; 
+    margin: 20px 5px 0px 5px;
+    border-radius: 5px;
+
+}
+
+.img-container-4 .img-six{
+    width: auto;
+    height: 100%; 
+    border-radius: 5px;
+    /* object-fit: cover; */
+    
 }
