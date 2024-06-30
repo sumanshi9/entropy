@@ -1,5 +1,5 @@
 // src/components/HomePage.js
-import React from 'react';
+import React, {useRef, useEffect} from 'react'
 import './Home.css';
 import mainImg from '../Images/mainNepoPizza.png';
 import carousalOne from '../Images/carousal-one.jpg';
@@ -17,25 +17,41 @@ import carousalTl from '../Images/carousal-12.jpg';
 
 import instagramIcon from '../Images/instagram.svg';
 
+import LocomotiveScroll from 'locomotive-scroll';
+// import './LocomotiveScroll.css'
+
 
 
 
 
 
 const Home = () => {
+
+  useEffect(() => {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector('[data-scroll-container]'),
+      smooth: true
+    });
+
+    return () => {
+      scroll.destroy(); // Cleanup function to destroy the LocomotiveScroll instance
+    };
+  }, []); 
+
+
   return (
-    <div>
-      <div className='home-container-1'>
+    <div data-scroll-container>
+      <div className='home-container-1' >
        
         <div className='sub-1'>
-            <div class="maintxt">
+            <div class="maintxt" data-scroll data-scroll-speed="5">
               <h1>MORE THAN</h1>
               <h1>JUST PIZZA</h1>
             </div>
             <div class="subheading">
               <p>Neapolitan ispired pizza cloud kitchen specializes in handcrafted, wood fired pizza made with fresh ingredients</p>
             </div>
-            <div class="contp2">
+            <div class="contp2" >
               <div class="leftdiv">
                 <button class="OrderNowButton"><a href=""> Order Now </a></button>
               </div>
@@ -46,12 +62,12 @@ const Home = () => {
             
 
         </div>
-        <div className='sub-2'>
+        <div className='sub-2' data-scroll data-scroll-speed="5">
           <img class="mainImg" src={mainImg} alt="Nepolitan Pizza" ></img>
         </div>
       </div>
 
-      <div class="home-container-2">
+      <div class="home-container-2" data-scroll data-scroll-speed="5">
         <div class="home-cont-2-sub-1">
           <h4>OUR PLEDGE TO QUALITY</h4>
           <h1>BEST PIZZA <br></br>IN TOWN</h1>
@@ -61,7 +77,7 @@ const Home = () => {
         </div>
         <div class="home-cont-2-sub-2">
           <div class="img-container-1">  
-            <img class="img-one" src={carousalEl} alt= "Wood fire pizza"></img>   
+            <img class="img-one" src={carousalEl} alt= "Wood fire pizza" ></img>   
 
           </div>
           <div class="img-container-2">  
