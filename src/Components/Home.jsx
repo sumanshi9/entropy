@@ -67,7 +67,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div class="home-container-2" data-scroll data-scroll-speed="5">
+      <div class="home-container-2" data-scroll data-scroll-speed="2">
         <div class="home-cont-2-sub-1">
           <h4>OUR PLEDGE TO QUALITY</h4>
           <h1>BEST PIZZA <br></br>IN TOWN</h1>
